@@ -1,0 +1,31 @@
+.discover {
+    margin-bottom: 40px;
+
+    &-header {
+        margin-bottom: 40px;
+    }
+
+    &-img {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    &-content {
+        color: $textHeaderColor;
+    }
+
+    &-title {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+
+    &-desc {
+    }
+}

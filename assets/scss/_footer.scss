@@ -1,0 +1,51 @@
+.footer {
+    position: relative;
+    background-color: rgb(241, 236, 236);
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        padding: 50px;
+    }
+
+    &-header {
+        margin-bottom: 20px;
+    }
+
+    &-contact {
+        &-list {
+            list-style-type: none;
+        }
+
+        &-item {
+            margin-bottom: 20px;
+        }
+        &-item a {
+            color: $textHeaderColor;
+        }
+    }
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+
+.copyright::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}

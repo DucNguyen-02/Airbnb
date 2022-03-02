@@ -1,0 +1,83 @@
+.header {
+    height: 80px;
+    width: 100%;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: fixed;
+    background-color: $whiteColor;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    & svg {
+        color: $primaryColor;
+        cursor: pointer;
+    }
+
+    &-search {
+        min-width: 300px;
+        display: flex;
+        position: relative;
+        &-input {
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 50px;
+            outline: none;
+            border: 1px solid $textColor;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        &-btn {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 8px;
+            color: $whiteColor;
+            background-color: $primaryColor;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+        }
+    }
+
+    &-options {
+        display: flex;
+        gap: 15px;
+
+        &-home {
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: none;
+            background-color: transparent;
+            color: $textHeaderColor;
+            font-size: 16px;
+        }
+
+        &-icon {
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: none;
+            background-color: transparent;
+        }
+
+        &-user {
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+        }
+
+        &-home:hover,
+        &-icon:hover,
+        &-user:hover {
+            background-color: rgb(243, 241, 241);
+        }
+    }
+}

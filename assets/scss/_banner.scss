@@ -1,0 +1,32 @@
+.banner {
+    background-image: url('https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=720');
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    margin-bottom: 80px;
+
+    &-content {
+        padding: 80px;
+        color: $whiteColor;
+        max-width: 535px;
+    }
+
+    &-header {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    &-desc {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    &-btn {
+        padding: 10px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+        border: none;
+    }
+}
